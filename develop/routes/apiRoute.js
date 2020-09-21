@@ -8,15 +8,14 @@ const db = require("../db/db.json");
 
 // Api Routes
 // ==========
-
+const routeAPI = function () {
 // Get
 
 // Post
 
 // Delete
 
-
+}
 // Export
 // ======
-
-module.exports = ;
+module.exports = routeAPI;
