@@ -4,21 +4,27 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 
+const app = express();
+
 
 // HTML Routes
 // ===========
-const routeHTML = function() {
+const htmlRoute = function(app) {
 // return notes
    app.get("/notes", function (req, res) {
       res.sendFile(path.join(__dirname, "../public/notes.html"));
    });
 
-// return index
-   app.get("*", function (req, res) {
+   app.get("/styles", function(req, res){
+      res.sendFile(path.join(__dirname, "../public/assets/css/styles.css"))
+   });
+
+   // return index
+   app.get("/", function (req, res) {
       res.sendFile(path.join(__dirname, "../public/index.html"));
    });
-}
+};
 
 // Export
 // ======
-modules.export = routeHTML;
+module.exports = htmlRoute;
