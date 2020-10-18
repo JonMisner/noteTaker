@@ -11,7 +11,7 @@ const app = express();
 const apiRoute = function (app) {
    // Get
    app.get("/api/notes", function(req, res) {
-      // fs.readFile("../db/db.json", "utf8");
+      fs.readFile("../db/db.json", "utf8");
       res.send(db);
    });
 
