@@ -4,7 +4,7 @@
  
   ## Description
 
-    take notes with node and inquirer
+    take notes with node and express
 ***
 
   ## Table of Contents
@@ -30,13 +30,6 @@
   ## Contributors
 
      Jon Misner
-***
-  ## Tests
-
-  To run tests, run the following command:
-  
-     NA
-  
 ***
   ## Contact Information
 
